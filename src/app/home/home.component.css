@@ -1,4 +1,12 @@
 .bgImage {
-  /*background-image: url('../../assets/Images/dp.jpg');*/
+  background-image: url('../../assets/Images/developer.jpg');
   background-size: cover;
+  height: 80vh;
+  width: 94vw;
+}
+.text {
+  color: azure;
+  /*color: crimson;*/
+  padding-top: 59vh;
+  font-family: 'Times New Roman', Times, serif;
 }
