@@ -1,3 +1,49 @@
-<p>
-  contact works!
-</p>
+<md-card>
+  <md-card-header>
+    <div md-card-avatar class="example-header-image"></div>
+    <md-card-title>
+      <h1 class="center"> Say Hi! </h1>
+    </md-card-title>
+  </md-card-header>
+  <md-card-content>
+    <form novalidate class="formCenter" [formGroup]="ContactForm" (ngSubmit)="sendMsg(ContactForm.value)">
+      <br>
+      <md-input-container 
+        autofocus 
+        class="inputLength"        
+        [dividerColor]="(!ContactForm.controls['name'].valid || ContactForm.controls['name'].pristine) ? 'warn':'primary'">
+          <input mdInput type="text" placeholder="Name*" formControlName="name" />
+      </md-input-container>
+      <br>
+      <md-input-container 
+        class="inputLength"
+        [dividerColor]="(!ContactForm.controls['email'].valid || ContactForm.controls['email'].pristine) ? 'warn':'primary'">
+          <input mdInput type="email" placeholder="Email*" formControlName="email" />
+      </md-input-container> 
+      <br>
+      <md-input-container 
+        class="inputLength"
+        [dividerColor]="(!ContactForm.controls['msg'].valid || ContactForm.controls['msg'].pristine) ? 'warn':'primary'">
+          <textarea mdInput placeholder="Message*" formControlName="msg"></textarea>
+      </md-input-container>
+      <br><br>
+      <button md-raised-button type="submit" color="primary" class="inputLength"> SEND </button>
+    </form>
+  </md-card-content>
+  <md-card-actions>
+    <br><br>
+      <!--<md-icon>send</md-icon>-->
+      <a href="mailto:quratulann_iqbal@hotmail.com" target="_blank">
+        <img src="../../assets/Images/email.png" alt="Email Me" />
+      </a>
+      <a href="https://github.com/AnnyIqbal" target="_blank">
+        <img src="../../assets/Images/github.png" alt="GitHub Profile" />
+      </a>
+      <a href="https://pk.linkedin.com/in/qurat-ul-ann-iqbal-aa4a4938" target="_blank">
+        <img src="../../assets/Images/linkedin.png" alt="LinkedIn Profile" />
+      </a>
+      <a href="https://www.facebook.com/quratulann.iqbal" target="_blank">
+        <img src="../../assets/Images/facebook.png" alt="Facebook Profile" />
+      </a>
+  </md-card-actions>
+</md-card>

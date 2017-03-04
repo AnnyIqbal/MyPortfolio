@@ -1,0 +1,20 @@
+.example-header-image {
+  /*background-image: url('assets/img/examples/shiba1.jpg');*/
+  background-size: cover;
+}
+
+.formCenter {
+    width: 70%;
+    margin: 0 auto;
+}
+.inputLength {
+    width: 100%;
+}
+
+.center {
+    width: 100px;
+    margin-left: 420px;
+}
+a {
+    text-decoration: none;
+}
