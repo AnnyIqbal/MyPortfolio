@@ -17,7 +17,7 @@ import { ContactComponent } from './contact/contact.component';
 import { NavigationComponent } from './navigation/navigation.component';
 
 const route: Routes = [
-  { path: '', component: NavigationComponent , pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'portfolio', component: ProjectsComponent },
   { path: 'about', component: AboutComponent },

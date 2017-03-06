@@ -1,0 +1,43 @@
+.bgImage {
+  background-image: url('../../assets/Images/DeathtoStock_Wired2.jpg');
+  background-size: cover;
+  /*height: 80vh;
+  width: 95.2vw;*/
+  height: 88vh;
+  width: 97.5vw;
+  color: antiquewhite;
+}
+.centerDisplay {
+    width: 1099px;
+    margin-top: 4vh;
+    margin-left: 9vw;
+    opacity: 0.8;
+}
+.card {
+    width: 70vw;
+    margin: 55px auto;
+    opacity: 0.7;
+}
+.justify {
+    text-align: justify;
+    margin: 5px 6em;
+    font-family: cursive;
+}
+.flexBox {
+    display: inline-flex;
+}
+.flexItem {
+    flex: 1 1 auto;
+    margin: 0 10px;
+    width: 25vw;
+    text-align: center;
+}
+.size {
+    height: 150px;
+    width: 120px;
+    margin: 0 auto;
+}
+.mid {
+    text-align: center;
+    margin: 0 auto;
+}

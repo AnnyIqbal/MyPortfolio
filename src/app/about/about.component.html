@@ -1,3 +1,51 @@
-<p>
-  about works!
-</p>
+<md-tab-group class="bgImage">
+  <md-tab label="Introduction">
+    <md-card class="card">
+      <md-card-title class="mid"> 
+         <h2> Hi! This is <strong>Qurat ul Ann Iqbal</strong> </h2>
+      </md-card-title>
+      <md-card-subtitle class="mid">
+        <h3> A Front-End Web App / Hybrid Mobile App Developer </h3>
+      </md-card-subtitle>
+      <md-card-content class="mid">
+          <h4 class="justify"> App Designing and Development is a hybrid of Art and Science; and I'm trying to be the doctor besides being an artist, who not only dreams to but also works hard to achieve doctrate in Web Engineering. I'm passionate to create eye-catchy, unique, responsive web apps and hybrid mobile apps. </h4>
+          <h1> Academics </h1>
+          <div class="flexBox">
+            <md-card class="flexItem" *ngFor="let item of items">
+              <md-card-header>
+                <md-card-title>
+                  <h2>{{item.title}}</h2>
+                </md-card-title>
+                <md-card-subtitle>
+                  <h3>{{item.subtitle}}</h3>
+                </md-card-subtitle>
+              </md-card-header>
+              <br>
+              <img md-card-image class="size" src="../../assets/Images/uok.png">
+              <br><br>
+              <md-card-content> 
+                <p> <strong>{{item.cgpa}}</strong></p>
+                <p> {{item.batch}} </p>
+              </md-card-content>
+            </md-card>
+          </div>
+      </md-card-content>
+    </md-card>
+  </md-tab>
+  <md-tab label="Expertise">
+    <img class="centerDisplay" src="../../assets/Images/chart.png" alt="skillset" />
+  </md-tab>
+  <md-tab label="Hands-on Technologies">
+  <md-card>
+    <md-grid-list cols="4" rowHeight="150px">
+      <md-grid-tile
+          *ngFor="let tile of tiles"
+          [colspan]="1"
+          [rowspan]="2"
+          [style.background]="tile.color">
+        <img src={{tile.text}} alt="logos" />
+      </md-grid-tile>
+    </md-grid-list>
+  </md-card>
+  </md-tab>
+</md-tab-group>
