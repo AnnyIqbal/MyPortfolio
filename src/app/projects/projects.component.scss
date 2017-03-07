@@ -5,8 +5,18 @@
     display: inline-flex;
 }
 .flexItem {
-    @include setWidth(44.2vw);
+    // @include setWidth(42vw);
     flex: 1 1 auto;
     margin: 0 10px;
     text-align: center;
+}
+.noDecor {
+    text-decoration: none;
+    color: whitesmoke;
+}
+.widthGrid {
+    @include setWidth(29vw);
+}
+.widthDetail {
+    @include setWidth(55vw);
 }
