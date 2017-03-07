@@ -1,0 +1,12 @@
+@mixin setWidth($value) {
+    width: $value;
+}
+.flexBox {
+    display: inline-flex;
+}
+.flexItem {
+    @include setWidth(44.2vw);
+    flex: 1 1 auto;
+    margin: 0 10px;
+    text-align: center;
+}

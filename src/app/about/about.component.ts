@@ -8,18 +8,18 @@ import { Router } from '@angular/router';
 })
 export class AboutComponent implements OnInit {
   tiles = [
-      {text: '../../assets/Images/ionic.jpg', cols: 3, rows: 1, color: 'lightblue'},
-      {text: '../../assets/Images/angular.png', cols: 1, rows: 2, color: 'lightgreen'},
-      {text: '../../assets/Images/ts.jpg', cols: 1, rows: 1, color: 'lightpink'},
-      {text: '../../assets/Images/html.png', cols: 2, rows: 1, color: '#DDBDF1'},
-      {text: '../../assets/Images/css.png', cols: 2, rows: 1, color: 'yellowgreen'},
-      {text: '../../assets/Images/js.png', cols: 2, rows: 1, color: 'blanchedalmond'},
-      {text: '../../assets/Images/firebase.png', cols: 2, rows: 1, color: 'mediumturquoise'},
-      {text: '../../assets/Images/git.png', cols: 2, rows: 1, color: 'sandybrown'},
-      {text: '../../assets/Images/redux.png', cols: 2, rows: 1, color: 'chocolate'},
-      {text: '../../assets/Images/bootstrap.jpg', cols: 2, rows: 1, color: 'plum'},
-      {text: '../../assets/Images/angFire.jpg', cols: 2, rows: 1, color: 'silver'},
-      {text: '../../assets/Images/rxjs.png', cols: 2, rows: 1, color: 'salmon'},
+      {text: '../../assets/Images/ionic.jpg', color: 'lightblue'},
+      {text: '../../assets/Images/angular.png', color: 'lightgreen'},
+      {text: '../../assets/Images/ts.jpg', color: 'lightpink'},
+      {text: '../../assets/Images/html.png', color: '#DDBDF1'},
+      {text: '../../assets/Images/css.png', color: 'yellowgreen'},
+      {text: '../../assets/Images/js.png', color: 'blanchedalmond'},
+      {text: '../../assets/Images/firebase.png', color: 'mediumturquoise'},
+      {text: '../../assets/Images/git.png', color: 'sandybrown'},
+      {text: '../../assets/Images/redux.png', color: 'chocolate'},
+      {text: '../../assets/Images/bootstrap.jpg', color: 'plum'},
+      {text: '../../assets/Images/angFire.jpg', color: 'silver'},
+      {text: '../../assets/Images/rxjs.png', color: 'salmon'}
     ];
 
     items = [
