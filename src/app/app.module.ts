@@ -17,6 +17,10 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { NavigationComponent } from './navigation/navigation.component';
 
+// Services
+import { PortfolioService } from './services/portfolio.service';
+
+// Firebase Configuration Object
   const config = {
     apiKey:  'AIzaSyAuFhT2nSsmHVfxouYWGmy2MaYFR-Myd6g ',
     authDomain:  'portfolio-annyiqbal.firebaseapp.com ',
@@ -25,6 +29,7 @@ import { NavigationComponent } from './navigation/navigation.component';
     messagingSenderId:  '630847860950 '
   };
 
+// Routing Object
 const route: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
@@ -53,6 +58,7 @@ const route: Routes = [
     AngularFireModule.initializeApp(config)
   ],
   providers: [
+    PortfolioService,
     {provide: LocationStrategy, useClass: HashLocationStrategy},
   ],
   bootstrap: [AppComponent]

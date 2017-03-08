@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, FormControl, Validators, AbstractControl } from '@angular/forms';
-import { ValidateId } from '../idValidator';
+import { ValidateId } from '../services/idValidator';
 
 @Component({
   selector: 'app-contact',
