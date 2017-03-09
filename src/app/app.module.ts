@@ -19,6 +19,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 
 // Services
 import { PortfolioService } from './services/portfolio.service';
+import { Talk2dbService } from './services/talk2db.service';
 
 // Firebase Configuration Object
   const config = {
@@ -58,6 +59,7 @@ const route: Routes = [
     AngularFireModule.initializeApp(config)
   ],
   providers: [
+    Talk2dbService,
     PortfolioService,
     {provide: LocationStrategy, useClass: HashLocationStrategy},
   ],

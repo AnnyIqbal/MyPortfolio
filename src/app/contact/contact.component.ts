@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, FormControl, Validators, AbstractControl } from '@angular/forms';
 import { ValidateId } from '../services/idValidator';
+import { Talk2dbService } from '../services/talk2db.service';
 
 @Component({
   selector: 'app-contact',
@@ -19,7 +20,7 @@ export class ContactComponent implements OnInit {
       {src: '../../assets/Images/facebook.png', href: 'https://www.facebook.com/quratulann.iqbal', class: 'ion-email', color: '#DDBDF1'}
     ];
 
-  constructor(private route: Router, private formBuilder: FormBuilder) {
+  constructor(private route: Router, private formBuilder: FormBuilder, public db: Talk2dbService) {
      this.ContactForm = this.formBuilder.group({
         name:  ['', Validators.compose([ Validators.required, Validators.maxLength(20), Validators.minLength(3) ])],
         email: ['', Validators.compose([ ValidateId, Validators.required ])],
@@ -32,5 +33,6 @@ export class ContactComponent implements OnInit {
 
   sendMsg(formValue) {
     console.log('@@@@@@@@@@@@@@@@', formValue);
+    this.db.submitMsg(formValue);
   }
 }

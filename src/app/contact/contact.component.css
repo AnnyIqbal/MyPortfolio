@@ -22,8 +22,9 @@ a {
     width: 99vw;
 }
 .card {
-    width: 70vw;
+    /*width: 70vw;*/
     /*margin: 55px auto;*/
+    padding: 50px;
     opacity: 0.7;
     text-align: center;
 }
