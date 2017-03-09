@@ -31,6 +31,6 @@ export class ContactComponent implements OnInit {
   }
 
   sendMsg(formValue) {
-    console.log(formValue);
+    console.log('@@@@@@@@@@@@@@@@', formValue);
   }
 }

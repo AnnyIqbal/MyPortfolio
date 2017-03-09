@@ -1,5 +1,5 @@
 .bgImage {
-  background-image: url('../../assets/Images/home.jpg');
+  background-image: url('../../assets/Images/dev.jpg');
   background-size: cover;
   /*height: 80vh;
   width: 95.2vw;*/
@@ -21,7 +21,7 @@
 .justify {
     text-align: justify;
     margin: 5px 6em;
-    font-family: cursive;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .flexBox {
     display: inline-flex;
@@ -31,6 +31,7 @@
     margin: 0 10px;
     width: 25vw;
     text-align: center;
+    border: 1px solid darkgray;
 }
 .size {
     height: 150px;
@@ -40,4 +41,8 @@
 .mid {
     text-align: center;
     margin: 0 auto;
+}
+.screenSize {
+    height: 92vh;
+    width: 99vw;
 }

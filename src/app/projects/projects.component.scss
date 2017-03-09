@@ -20,3 +20,9 @@
 .widthDetail {
     @include setWidth(55vw);
 }
+.screenSize {
+    // height: 90vh;
+    // @include setWidth(99vw);
+    height: 88vh;
+    width: 96vw;
+}

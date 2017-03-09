@@ -10,3 +10,9 @@
   padding-top: 59vh;
   font-family: 'Times New Roman', Times, serif;
 }
+.screenSize {
+    /*height: 90vh;
+    width: 99vw;*/
+    height: 88vh;
+    width: 96vw;
+}
