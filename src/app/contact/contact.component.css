@@ -1,5 +1,4 @@
 .example-header-image {
-  /*background-image: url('assets/img/examples/shiba1.jpg');*/
   background-size: cover;
 }
 
@@ -10,11 +9,31 @@
 .inputLength {
     width: 100%;
 }
-
-.center {
+/*.center {
     width: 100px;
     margin-left: 420px;
-}
+}*/
 a {
     text-decoration: none;
+}
+.flexBox {
+    display: inline-flex;
+}
+.flexItem {
+    flex: 1 1 auto;
+    text-align: center;
+}
+.formWide {
+    width: 86vw;
+}
+.socialMedia {
+    width: 5vw;
+}
+.heading {
+    width: 4em;
+    margin: 10px 162px;
+}
+.small {
+    height: 10px;
+    width: 10px;
 }

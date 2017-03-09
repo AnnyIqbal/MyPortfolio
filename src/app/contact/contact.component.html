@@ -1,8 +1,8 @@
-<md-card>
+<div class="flexBox">
+<md-card class="flexItem">
   <md-card-header>
-    <div md-card-avatar class="example-header-image"></div>
     <md-card-title>
-      <h1 class="center"> Say Hi! </h1>
+      <h1 class="heading"> Say Hi! </h1>
     </md-card-title>
   </md-card-header>
   <md-card-content>
@@ -24,26 +24,43 @@
       <md-input-container 
         class="inputLength"
         [dividerColor]="(!ContactForm.controls['msg'].valid || ContactForm.controls['msg'].pristine) ? 'warn':'primary'">
-          <textarea mdInput placeholder="Message*" formControlName="msg"></textarea>
+          <textarea mdInput placeholder="Message*" formControlName="msg" rows="5"></textarea>
       </md-input-container>
       <br><br>
       <button md-raised-button type="submit" color="primary" class="inputLength"> SEND </button>
     </form>
   </md-card-content>
+</md-card>
+<md-card class="flexItem socialMedia">
   <md-card-actions>
-    <br><br>
-      <!--<md-icon>send</md-icon>-->
+    <md-grid-list cols="4" rowHeight="150px">
+      <md-grid-tile
+          *ngFor="let medium of media" class ="small"
+          [colspan]="4"
+          [rowspan]="1"
+          [style.background]="medium.color">
+            <a href="{{medium.href}}" target="_blank">
+              <!--<img src={{medium.src}} alt="logos" />-->
+              <i class="{{medium.class}}"></i>
+            </a>
+      </md-grid-tile>
+    </md-grid-list>
+    <!--<br><br>
       <a href="mailto:quratulann_iqbal@hotmail.com" target="_blank">
         <img src="../../assets/Images/email.png" alt="Email Me" />
       </a>
+      <br><br>
       <a href="https://github.com/AnnyIqbal" target="_blank">
         <img src="../../assets/Images/github.png" alt="GitHub Profile" />
       </a>
+      <br><br>
       <a href="https://pk.linkedin.com/in/qurat-ul-ann-iqbal-aa4a4938" target="_blank">
         <img src="../../assets/Images/linkedin.png" alt="LinkedIn Profile" />
       </a>
+      <br><br>
       <a href="https://www.facebook.com/quratulann.iqbal" target="_blank">
         <img src="../../assets/Images/facebook.png" alt="Facebook Profile" />
-      </a>
+      </a>-->
   </md-card-actions>
 </md-card>
+</div>
