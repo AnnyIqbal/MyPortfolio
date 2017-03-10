@@ -5,10 +5,10 @@
     display: inline-flex;
 }
 .flexItem {
-    // @include setWidth(42vw);
     flex: 1 1 auto;
     margin: 0 10px;
     text-align: center;
+    border: 1px solid rgb(103,58,183);
 }
 .noDecor {
     text-decoration: none;
@@ -21,8 +21,11 @@
     @include setWidth(55vw);
 }
 .screenSize {
-    // height: 90vh;
-    // @include setWidth(99vw);
-    height: 88vh;
-    width: 96vw;
+    @include setWidth(calc(100vw - 83px));
+    height: 100vh;
+    border: 1px solid rgb(103,58,183);
+}
+.fixSize {
+    height: 70%;
+    width: 50%;
 }

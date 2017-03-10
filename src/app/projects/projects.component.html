@@ -17,13 +17,13 @@
     <md-card-subtitle>
       <h3> {{prj.technologies}} </h3>
     </md-card-subtitle>
-    <img md-card-image src={{prj.src}} alt="project" />
+    <img ngClass="{{prj.class}}" md-card-image src={{prj.src}} alt="project" />
     <md-card-content>
       {{prj.readme}}
     </md-card-content>
     <md-card-actions>
       <a class="noDecor" type="button" md-raised-button color="primary" href="{{prj.demo}}" target="_blank"> VIEW LIVE </a>
     </md-card-actions>
-    <br>
+    <br><br>
   </md-card>
 </md-card>

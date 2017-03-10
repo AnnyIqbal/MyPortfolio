@@ -7,6 +7,7 @@ export interface IProject {
     readme: string;
     src: string;
     demo: string;
+    class?: string,
 }
 
 @Injectable()
@@ -108,6 +109,7 @@ export class PortfolioService {
         technologies: ['TypeScript2', 'Ionic2', 'Firebase Database'],
         readme: 'This is a simple online store kind of demo app, with Add-to-Cart functionality.',
         src: '../../assets/Images/ionicInventory.png',
+        class: 'fixSize',
         demo: 'https://ionic-inventoryapp.firebaseapp.com/'
       },
       {
@@ -116,6 +118,7 @@ export class PortfolioService {
         technologies: ['TypeScript2', 'Ionic2', 'Firebase Database'],
         readme: 'To Do App lets you create your TODO Account to enlist daily based tasks that are edittable and removable.',
         src: '../../assets/Images/ionictodo.png',
+        class: 'fixSize',
         demo: 'https://ionic-todoapp-d0b38.firebaseapp.com/'
       }
     ];
