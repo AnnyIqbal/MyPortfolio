@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, FormControl, Validators, AbstractControl } from '@angular/forms';
 import { ValidateId } from '../services/idValidator';
 import { Talk2dbService } from '../services/talk2db.service';
+import {MdSnackBar} from '@angular/material';
 
 @Component({
   selector: 'app-contact',
@@ -20,7 +21,12 @@ export class ContactComponent implements OnInit {
       {src: '../../assets/Images/facebook.png', href: 'https://www.facebook.com/quratulann.iqbal', class: 'ion-email', color: '#DDBDF1'}
     ];
 
-  constructor(private route: Router, private formBuilder: FormBuilder, public db: Talk2dbService) {
+  constructor(
+    private route: Router, 
+    private formBuilder: FormBuilder, 
+    public db: Talk2dbService,
+    public snackBar: MdSnackBar
+    ) {
      this.ContactForm = this.formBuilder.group({
         name:  ['', Validators.compose([ Validators.required, Validators.maxLength(20), Validators.minLength(3) ])],
         email: ['', Validators.compose([ ValidateId, Validators.required ])],
@@ -32,7 +38,17 @@ export class ContactComponent implements OnInit {
   }
 
   sendMsg(formValue) {
-    console.log('@@@@@@@@@@@@@@@@', formValue);
-    this.db.submitMsg(formValue);
+    if(formValue.valid) {
+      console.log('@@@@@@@@@@@@@@@@', formValue);
+      // this.db.submitMsg(formValue);
+      this.snackBar.open('Thank you! I\'ll get back to you soon.', '' , {
+        duration: 2000,
+      });
+    }
+    else {
+      this.snackBar.open('Form is invalid!','Error!', {
+        duration: 2000,
+      });
+    }
   }
 }
