@@ -1,5 +1,5 @@
 .bgImage {
-  background-image: url('../../assets/Images/developer.jpg');
+  background-image: url(../../assets/Images/developer.jpg);
   background-size: cover;
   height: 80vh;
   width: 95.2vw;
@@ -15,6 +15,10 @@
     width: 99vw;*/
     /*height: 88vh;
     width: 96vw;*/
+    /* desktop ofc
     height: 84vh;
+    width: 95vw;*/
+    /*laptop*/
+    height: 80vh;
     width: 95vw;
 }

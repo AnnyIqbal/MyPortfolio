@@ -1,5 +1,5 @@
 .bgImage {
-  background-image: url('../../assets/Images/dev.jpg');
+  background-image: url(../../assets/Images/dev.jpg);
   background-size: cover;
   /*height: 80vh;
   width: 95.2vw;*/
@@ -46,8 +46,12 @@
 .screenSize {
     /*height: 92vh;
     width: 99vw;*/
+    /* ofc desktop
     height: 90vh;
-    width: 98.7vw;
+    width: 98.7vw;*/
+    /*laptop*/
+    height: 87vh;
+    width: 98.9vw;
 }
 
 
