@@ -1,18 +1,23 @@
   <md-card class="flexBox screenSize">
     <md-card class="flexItem widthGrid">
-      <md-grid-list cols="3" rowHeight="100px">
-        <md-grid-tile (click) = "showDetails(project)"
-            *ngFor="let project of projects"
-            [colspan]="1"
-            [rowspan]="1"
-            [style.background]="project.color">
-            {{project.title}}
-        </md-grid-tile>
-      </md-grid-list>
+      <md-card-title> 
+        <h2> Projects </h2>
+      </md-card-title>
+      <md-card-content>
+        <md-grid-list cols="3" rowHeight="100px">
+          <md-grid-tile class="textStyle" (click) = "showDetails(project)"
+              *ngFor="let project of projects"
+              [colspan]="1"
+              [rowspan]="1"
+              [style.background]="project.color">
+                {{project.title}}
+          </md-grid-tile>
+        </md-grid-list>
+      </md-card-content>
     </md-card>
   <md-card class="flexItem widthDetail">
     <md-card-title> 
-      <h1> {{prj.title}} </h1>
+      <h2> {{prj.title}} </h2>
     </md-card-title>
     <md-card-subtitle>
       <h3> {{prj.technologies}} </h3>

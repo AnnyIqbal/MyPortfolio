@@ -1,5 +1,5 @@
 .bgImage {
-  background-image: url(../../assets/Images/home.jpg);
+  background-image: url(../../assets/Images/home.png);
   background-size: cover;
 }
 .formCenter {
@@ -26,6 +26,6 @@ a {
     opacity: 0.7;
     text-align: center;
     width: 70vw;
-    height: calc(100% - 35vh); // 45vh
-    margin: 5vh auto;
+    height: 23em;
+    margin: 2vh auto;
 }

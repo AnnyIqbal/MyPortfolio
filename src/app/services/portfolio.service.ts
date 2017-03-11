@@ -56,14 +56,6 @@ export class PortfolioService {
         demo: 'https://classified-app-1052b.firebaseapp.com/'
       },
       {
-        title: 'Inventory App',
-        color: 'blanchedalmond',
-        technologies: ['Angular2', 'TypeScript2', 'BootStrap'],
-        readme: 'This is a simple online store kind of demo app, with Add-to-Cart functionality.',
-        src: '../../assets/Images/pwaInventory.png',
-        demo: 'https://inventory-app-3a944.firebaseapp.com/'
-      },
-      {
         title: 'Reddit App',
         color: 'mediumturquoise',
         technologies: ['Angular2', 'TypeScript2', 'BootStrap'],

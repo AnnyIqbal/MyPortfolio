@@ -22,10 +22,15 @@
 }
 .screenSize {
     @include setWidth(calc(100vw - 83px));
-    height: 100vh;
+    // height: 100vh;
     border: 1px solid rgb(103,58,183);
 }
 .fixSize {
     height: 70%;
     width: 50%;
+}
+.textStyle {
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 16px;
 }

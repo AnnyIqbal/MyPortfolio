@@ -1,0 +1,84 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      C:\nodejs\node.exe C:\Users\na\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] CLI Version:  3.2.1
+[debug] Platform:     win32
+[debug] Node Version: v7.6.0
+[debug] Time:         Sat Mar 11 2017 12:18:31 GMT+0500 (Pakistan Standard Time)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/portfolio-annyiqbal 
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/portfolio-annyiqbal/tokens 
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'portfolio-annyiqbal'...
+[info] 
+[info] i  deploying database, hosting
+[info] +  database: rules ready to deploy.
+[info] i  hosting: preparing dist directory for upload...
+[debug] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/portfolio-annyiqbal/uploads/-KewDvjVrebOBNHayoXz?fileCount=43&message= 
+[debug] Error: getaddrinfo EAI_AGAIN deploy.firebase.com:443
+    at Object.exports._errnoException (util.js:1028:11)
+    at errnoException (dns.js:33:15)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:76:26)
+[error] 
+[error] Error: Server Error. getaddrinfo EAI_AGAIN deploy.firebase.com:443
+[debug] ----------------------------------------------------------------------
+[debug] Command:      C:\nodejs\node.exe C:\Users\na\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase open
+[debug] CLI Version:  3.2.1
+[debug] Platform:     win32
+[debug] Node Version: v7.6.0
+[debug] Time:         Sat Mar 11 2017 12:24:53 GMT+0500 (Pakistan Standard Time)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/portfolio-annyiqbal 
+[debug] Error: getaddrinfo EAI_AGAIN admin.firebase.com:443
+    at Object.exports._errnoException (util.js:1028:11)
+    at errnoException (dns.js:33:15)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:76:26)
+[error] 
+[error] Error: Server Error. getaddrinfo EAI_AGAIN admin.firebase.com:443
+[debug] ----------------------------------------------------------------------
+[debug] Command:      C:\nodejs\node.exe C:\Users\na\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] CLI Version:  3.2.1
+[debug] Platform:     win32
+[debug] Node Version: v7.6.0
+[debug] Time:         Sat Mar 11 2017 12:25:06 GMT+0500 (Pakistan Standard Time)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/portfolio-annyiqbal 
+[debug] Error: getaddrinfo EAI_AGAIN admin.firebase.com:443
+    at Object.exports._errnoException (util.js:1028:11)
+    at errnoException (dns.js:33:15)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:76:26)
+[error] 
+[error] Error: Server Error. getaddrinfo EAI_AGAIN admin.firebase.com:443
+[debug] ----------------------------------------------------------------------
+[debug] Command:      C:\nodejs\node.exe C:\Users\na\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] CLI Version:  3.2.1
+[debug] Platform:     win32
+[debug] Node Version: v7.6.0
+[debug] Time:         Sat Mar 11 2017 12:25:28 GMT+0500 (Pakistan Standard Time)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/portfolio-annyiqbal 
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/portfolio-annyiqbal/tokens 
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'portfolio-annyiqbal'...
+[info] 
+[info] i  deploying database, hosting
+[info] +  database: rules ready to deploy.
+[info] i  hosting: preparing dist directory for upload...
+[debug] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/portfolio-annyiqbal/uploads/-KewFWK7v_rXLyciqJ5S?fileCount=43&message= 
+[debug] Error: getaddrinfo EAI_AGAIN deploy.firebase.com:443
+    at Object.exports._errnoException (util.js:1028:11)
+    at errnoException (dns.js:33:15)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:76:26)
+[error] 
+[error] Error: Server Error. getaddrinfo EAI_AGAIN deploy.firebase.com:443
