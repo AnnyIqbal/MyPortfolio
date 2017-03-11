@@ -7,7 +7,7 @@ export interface IProject {
     readme: string;
     src: string;
     demo: string;
-    class?: string,
+    class?: string;
 }
 
 @Injectable()
@@ -16,7 +16,7 @@ export class PortfolioService {
   projects: Array<IProject> = [
       {
         title: 'Puzzle',
-        color: 'lightgreen',
+        color: 'lightblue',
         technologies: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap'],
         readme: 'This is a memory game that flips tiles on click. If two tiles are different, the tiles will be hidden. If the two tiles are same, the tiles would be shown. When all tiles are shown, the game is won!',
         src: '../../assets/Images/game.png',
@@ -24,7 +24,7 @@ export class PortfolioService {
       },
       {
         title: 'Student Database',
-        color: 'rosybrown',
+        color: 'lightgreen',
         technologies: ['HTML', 'CSS', 'Java Script'],
         readme: 'This is a simple students database based on a form comprised of 4 fields. The data entered by a user binds to a table as soon as the "SAVE" button is clicked.',
         src: '../../assets/Images/db.png',
@@ -57,7 +57,7 @@ export class PortfolioService {
       },
       {
         title: 'Reddit App',
-        color: 'mediumturquoise',
+        color: 'blanchedalmond',
         technologies: ['Angular2', 'TypeScript2', 'BootStrap'],
         readme: 'This is a voting app that has some articles upon which readers can Upvote or Downvote the current ratings.',
         src: '../../assets/Images/reddit.png',
@@ -65,7 +65,7 @@ export class PortfolioService {
       },
       {
         title: 'Music Search App',
-        color: 'sandybrown',
+        color: 'mediumturquoise',
         technologies: ['Angular2', 'AngularMaterial2', 'TypeScript2', 'AngularFire'],
         readme: 'A searching app for Music, that is based on the Sportify Public API',
         src: '../../assets/Images/musicapp.png',
@@ -73,7 +73,7 @@ export class PortfolioService {
       },
       {
         title: 'YouTube Search App',
-        color: 'salmon',
+        color: 'sandybrown',
         technologies: ['Angular2', 'AngularMaterial2', 'TypeScript2', 'AngularFire'],
         readme: 'A real time searching app that uses the public API provided by YouTube.',
         src: '../../assets/Images/utube.png',
@@ -89,7 +89,7 @@ export class PortfolioService {
       },
       {
         title: 'Real-Time Parking Booking App',
-        color: 'palevioletred',
+        color: 'plum',
         technologies: ['Progressive Web App', 'Angular2', 'TypeScript2', 'AngularMaterial2', 'AngularFire2', 'Firebase Database', 'RxJS5', 'ng2-Redux'],
         readme: 'The project is a smart real-time parking booking system that provides customers an easy way of reserving a parking space online. It overcomes the problem of finding a parking space in commercial areas that unnecessary consumes time.',
         src: '../../assets/Images/app.png',
@@ -97,7 +97,7 @@ export class PortfolioService {
       },
       {
         title: 'Ionic-Inventory App',
-        color: 'plum',
+        color: 'silver',
         technologies: ['TypeScript2', 'Ionic2', 'Firebase Database'],
         readme: 'This is a simple online store kind of demo app, with Add-to-Cart functionality.',
         src: '../../assets/Images/ionicInventory.png',
@@ -106,7 +106,7 @@ export class PortfolioService {
       },
       {
         title: 'Ionic-To Do App',
-        color: 'silver',
+        color: 'salmon',
         technologies: ['TypeScript2', 'Ionic2', 'Firebase Database'],
         readme: 'To Do App lets you create your TODO Account to enlist daily based tasks that are edittable and removable.',
         src: '../../assets/Images/ionictodo.png',
