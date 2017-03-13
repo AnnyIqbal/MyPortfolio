@@ -1,6 +1,7 @@
 <md-tab-group class="bgImage screenSize">
   <md-tab label="Introduction">
-    <md-card class="card">
+    <div class="flexBox">
+    <md-card class="card flexItem">
       <md-card-title class="mid"> 
          <h2> Hi! This is <strong>Qurat ul Ann Iqbal</strong> </h2>
       </md-card-title>
@@ -16,7 +17,7 @@
             <br><br><br><br>
           </h2>
           <div class="flexBox">
-            <md-card class="flexItem" *ngFor="let item of items">
+            <md-card class="flexItem wide" *ngFor="let item of items">
               <md-card-header>
                 <md-card-title>
                   <h2>{{item.title}}</h2>
@@ -38,6 +39,10 @@
           </div>
       </md-card-content>
     </md-card>
+    <md-card class="flexItem">
+      <img class="image" src="../../assets/Images/designer-developer1.jpg" alt="developdesign" />
+    </md-card>
+    </div>
   </md-tab>
   <md-tab label="Technical Expertise">
   <md-card>

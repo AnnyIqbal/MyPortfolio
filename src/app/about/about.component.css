@@ -1,11 +1,12 @@
 .bgImage {
-  background-image: url(../../assets/Images/about.jpg);
-  background-size: cover;
-  /*height: 80vh;
-  width: 95.2vw;*/
+  /*background-image: url(../../assets/Images/dev.jpg);*/
+  /*background-image: url(../../assets/Images/images.jpg);*/
+  /*background-image: url(../../assets/Images/designer-developer1.jpg);*/
+  /*background-size: cover;*/
   height: 88vh;
   width: 97.5vw;
-  color: antiquewhite;
+  color: black;
+  font-size: 14px;  
 }
 .centerDisplay {
     width: 1099px;
@@ -14,10 +15,7 @@
     opacity: 0.8;
 }
 .card {
-    width: 70vw;
-    margin: 0 auto;
-    /*margin: 55px auto;*/
-    opacity: 0.7;
+    width: 45vw;
 }
 .justify {
     text-align: justify;
@@ -29,10 +27,8 @@
 }
 .flexItem {
     flex: 1 1 auto;
-    margin: 0 10px;
-    width: 25vw;
+    margin: 0 7px;
     text-align: center;
-    border: 1px solid darkgray;
 }
 .size {
     height: 150px;
@@ -53,6 +49,12 @@
     height: 87vh;
     width: 98.9vw;
 }
-
-
+.image {
+    width: 47vw; 
+    display: inline-flex; 
+    height: 73vh
+}
+.wide {
+    width: 15vw;
+}
 
