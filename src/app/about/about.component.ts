@@ -22,6 +22,10 @@ export class AboutComponent implements OnInit {
       {text: '../../assets/Images/rxjs.png', color: 'salmon'}
     ];
 
+    newTechs = [
+      {text: '../../assets/Images/nodejs.png', color: 'beidge'},
+      {text: '../../assets/Images/mongodb.png', color: 'violet'}
+    ];
     items = [
       {title: 'MBA', subtitle: 'Marketing', cgpa: '3.56 / 4.00', batch: '2012 - 2014'},
       {title: 'BCS', subtitle: 'Software Engineering', cgpa: '3.12 / 4.00', batch: '2006 - 2009'}

@@ -47,12 +47,19 @@
   <md-tab label="Technical Expertise">
   <md-card>
     <md-grid-list cols="4" rowHeight="150px">
-      <md-grid-tile
-          *ngFor="let tile of tiles"
+      <md-grid-tile *ngFor="let tile of tiles"
           [colspan]="1"
           [rowspan]="2"
           [style.background]="tile.color">
-        <img src={{tile.text}} alt="logos" />
+          <img src={{tile.text}} alt="logos" />
+      </md-grid-tile>
+    </md-grid-list>
+    <md-grid-list cols='4' rowHeight='150px'>
+      <md-grid-tile *ngFor="let tech of newTechs"
+          [colspan]="2"
+          [rowspan]="2"
+          [style.background]="tech.color">
+        <img src={{tech.text}} alt="logos" />
       </md-grid-tile>
     </md-grid-list>
   </md-card>
