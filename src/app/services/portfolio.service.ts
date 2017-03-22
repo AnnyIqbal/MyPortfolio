@@ -89,7 +89,7 @@ export class PortfolioService {
       },
       {
         title: 'Real-Time Parking Booking App',
-        color: 'plum',
+        color: 'hotpink',
         technologies: ['Progressive Web App', 'Angular2', 'TypeScript2', 'AngularMaterial2', 'AngularFire2', 'Firebase Database', 'RxJS5', 'ng2-Redux'],
         readme: 'The project is a smart real-time parking booking system that provides customers an easy way of reserving a parking space online. It overcomes the problem of finding a parking space in commercial areas that unnecessary consumes time.',
         src: '../../assets/Images/app.png',
@@ -112,6 +112,24 @@ export class PortfolioService {
         src: '../../assets/Images/ionictodo.png',
         class: 'fixSize',
         demo: 'https://ionic-todoapp-d0b38.firebaseapp.com/'
+      },
+      {
+        title: 'NodeJS-To Do App',
+        color: 'limegreen',
+        technologies: ['HTML5', 'JavaScript', 'NodeJs', 'MongoDb'],
+        readme: 'To Do App lets you create your TODO Account to enlist daily based tasks and are removable.',
+        src: '../../assets/Images/nodejstodo.png',
+        class: 'fixSize',
+        demo: 'https://floating-oasis-23393.herokuapp.com/'
+      },
+      {
+        title: 'NodeJS-NotePad App',
+        color: 'violet', //hotpink , beidge
+        technologies: ['HTML5', 'JavaScript', 'NodeJs'],
+        readme: 'NotePad App is a basic app that uses FileSystem to save, upload and download files.',
+        src: '../../assets/Images/notepad.png',
+        class: 'fixSize',
+        demo: 'http://mynotepadapp.herokuapp.com/'
       }
     ];
 }
