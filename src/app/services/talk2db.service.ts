@@ -3,13 +3,12 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
 @Injectable()
 export class Talk2dbService {
-  contacts: FirebaseListObservable<any> ;
+  users: FirebaseListObservable<any> = this.angularfire.database.list('/users');
 
-  constructor() { }
+  constructor(private angularfire: AngularFire) { }
 
   submitMsg(formObject) {
-    console.log('$$$$$$$$$$', this.contacts.$ref);
-    // this.contacts.$ref = formObject;
+    this.users.push(formObject);
   }
 
 }
