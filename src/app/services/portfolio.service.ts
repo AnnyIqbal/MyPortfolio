@@ -119,7 +119,6 @@ export class PortfolioService {
         technologies: ['HTML5', 'JavaScript', 'NodeJs', 'MongoDb'],
         readme: 'To Do App lets you create your TODO Account to enlist daily based tasks and are removable.',
         src: '../../assets/Images/nodejstodo.png',
-        class: 'fixSize',
         demo: 'https://floating-oasis-23393.herokuapp.com/'
       },
       {
@@ -128,7 +127,6 @@ export class PortfolioService {
         technologies: ['HTML5', 'JavaScript', 'NodeJs'],
         readme: 'NotePad App is a basic app that uses FileSystem to save, upload and download files.',
         src: '../../assets/Images/notepad.png',
-        class: 'fixSize',
         demo: 'http://mynotepadapp.herokuapp.com/'
       }
     ];

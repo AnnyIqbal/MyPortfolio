@@ -12,6 +12,11 @@ import {MdSnackBar} from '@angular/material';
 })
 export class ContactComponent implements OnInit {
 
+  email: string = '../../assets/Images/email-invert.png';
+  github: string = '../../assets/Images/github-invert.png';
+  linkedin: string = '../../assets/Images/linkedin-invert.png';
+  facebook: string = '../../assets/Images/fb-invert.png';
+
   ContactForm: FormGroup;
 
     media = [

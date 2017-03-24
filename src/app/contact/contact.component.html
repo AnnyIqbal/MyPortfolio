@@ -5,6 +5,20 @@
       <md-card-title>
         <h1> Say Hi! </h1>
       </md-card-title>
+      <md-card-actions class="rightAlign">
+        <a href="mailto:quratulann_iqbal@hotmail.com" target="_blank" (mouseover)='email = "../../assets/Images/email-filled.png"' (mouseout)='email = "../../assets/Images/email-invert.png"' >
+          <img src="{{email}}" alt="Email Me" />
+        </a>
+        <a href="https://github.com/AnnyIqbal" target="_blank"  (mouseover)='github = "../../assets/Images/github-filled.png"' (mouseout)='github = "../../assets/Images/github-invert.png"' >
+          <img src="{{github}}" alt="GitHub Profile" />
+        </a>
+        <a href="https://pk.linkedin.com/in/qurat-ul-ann-iqbal-aa4a4938" target="_blank"  (mouseover)='linkedin = "../../assets/Images/linkedin-filled.png"' (mouseout)='linkedin = "../../assets/Images/linkedin-invert.png"' >
+          <img src="{{linkedin}}" alt="LinkedIn Profile" />
+        </a>
+        <a href="https://www.facebook.com/quratulann.iqbal" target="_blank"  (mouseover)='facebook = "../../assets/Images/fb-filled.png"' (mouseout)='facebook = "../../assets/Images/fb-invert.png"' >
+          <img src="{{facebook}}" alt="Facebook Profile" />
+        </a>
+    </md-card-actions>
     </md-card-header>
     <md-card-content>
       <form novalidate class="formCenter" [formGroup]="ContactForm" (ngSubmit)="sendMsg(ContactForm.value)">
@@ -31,19 +45,5 @@
         <button md-raised-button type="submit" color="primary" class="inputLength"> SEND </button>
       </form>
     </md-card-content>
-    <md-card-actions class="rightAlign">
-        <a href="mailto:quratulann_iqbal@hotmail.com" target="_blank">
-          <img src="../../assets/Images/email.png" alt="Email Me" />
-        </a>
-        <a href="https://github.com/AnnyIqbal" target="_blank">
-          <img src="../../assets/Images/github.png" alt="GitHub Profile" />
-        </a>
-        <a href="https://pk.linkedin.com/in/qurat-ul-ann-iqbal-aa4a4938" target="_blank">
-          <img src="../../assets/Images/linkedin.png" alt="LinkedIn Profile" />
-        </a>
-        <a href="https://www.facebook.com/quratulann.iqbal" target="_blank">
-          <img src="../../assets/Images/facebook.png" alt="Facebook Profile" />
-        </a>
-    </md-card-actions>
   </md-card>
 </div>
