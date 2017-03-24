@@ -14,9 +14,6 @@
     margin-left: 9vw;
     opacity: 0.8;
 }
-.card {
-    width: 45vw;
-}
 .justify {
     text-align: justify;
     margin: 5px 6em;
@@ -40,12 +37,6 @@
     margin: 0 auto;
 }
 .screenSize {
-    /*height: 92vh;
-    width: 99vw;*/
-    /* ofc desktop
-    height: 90vh;
-    width: 98.7vw;*/
-    /*laptop*/
     height: 87vh;
     width: 98.9vw;
 }
@@ -55,6 +46,9 @@
     height: 73vh
 }
 .wide {
-    width: 15vw;
+    width: 25vw;
+    border: 1px solid rgb(103,58,183);
 }
-
+blockDisplay {
+    display: block !important;
+}
