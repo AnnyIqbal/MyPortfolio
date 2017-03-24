@@ -1,7 +1,6 @@
 .bgImage {
-  /*background-image: url(../../assets/Images/dev.jpg);*/
+  /*background-image: url(../../assets/Images/about.jpg);*/
   /*background-image: url(../../assets/Images/images.jpg);*/
-  /*background-image: url(../../assets/Images/designer-developer1.jpg);*/
   /*background-size: cover;*/
   height: 88vh;
   width: 97.5vw;
@@ -12,11 +11,13 @@
     width: 1099px;
     margin-top: 4vh;
     margin-left: 9vw;
-    opacity: 0.8;
+    /*opacity: 0.5;*/
 }
 .justify {
     text-align: justify;
     margin: 5px 6em;
+}
+.font {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .flexBox {
