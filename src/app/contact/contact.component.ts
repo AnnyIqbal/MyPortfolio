@@ -35,18 +35,13 @@ export class ContactComponent implements OnInit {
   ngOnInit() {
   }
 
-  sendMsg(formValue) {
-    // if (formValue.valid) {
-      console.log('@@@@@@@@@@@@@@@@', formValue);
-      this.db.submitMsg(formValue);
+  sendMsg(form) {
+    if (form.valid) {
+      console.log('@@@@@@@@@@@@@@@@', form.value);
+      this.db.submitMsg(form.value);
       this.snackBar.open('Thank you! I\'ll get back to you soon.', '' , {
         duration: 2000,
       });
     }
-  //   else {
-  //     this.snackBar.open('Form is invalid!', 'Error!', {
-  //       duration: 2000,
-  //     });
-  //   }
-  // }
+  }
 }

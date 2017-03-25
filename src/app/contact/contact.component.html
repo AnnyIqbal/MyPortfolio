@@ -21,7 +21,7 @@
     </md-card-actions>
     </md-card-header>
     <md-card-content>
-      <form novalidate class="formCenter" [formGroup]="ContactForm" (ngSubmit)="sendMsg(ContactForm.value)">
+      <form novalidate class="formCenter" [formGroup]="ContactForm" (ngSubmit)="sendMsg(ContactForm)">
         <br>
         <md-input-container 
           autofocus 
@@ -42,7 +42,7 @@
             <textarea mdInput placeholder="Message*" formControlName="msg" rows="5"></textarea>
         </md-input-container>
         <br><br>
-        <button md-raised-button type="submit" color="primary" class="inputLength"> SEND </button>
+        <button md-raised-button type="submit" color="primary" class="inputLength" [disabled]="!ContactForm.valid"> SEND </button>
       </form>
     </md-card-content>
   </md-card>

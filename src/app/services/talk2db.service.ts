@@ -9,6 +9,7 @@ export class Talk2dbService {
 
   submitMsg(formObject) {
     this.users.push(formObject);
+    alert('done');
   }
 
 }
