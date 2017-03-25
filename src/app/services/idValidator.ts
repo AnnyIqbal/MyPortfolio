@@ -6,7 +6,7 @@ interface Validator<T extends FormControl> {
 
 export function ValidateId(c: FormControl) {
     let IdPattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/; // correct pattern required
-    console.log(c.value);
+    // console.log(c.value);
     let a = IdPattern.test(c.value) ? null : {
         InValidPattern: true
     };

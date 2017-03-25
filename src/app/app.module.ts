@@ -23,11 +23,11 @@ import { Talk2dbService } from './services/talk2db.service';
 
 // Firebase Configuration Object
   const config = {
-    apiKey:  'AIzaSyAuFhT2nSsmHVfxouYWGmy2MaYFR-Myd6g ',
-    authDomain:  'portfolio-annyiqbal.firebaseapp.com ',
-    databaseURL:  'https://portfolio-annyiqbal.firebaseio.com ',
-    storageBucket:  'portfolio-annyiqbal.appspot.com ',
-    messagingSenderId:  '630847860950 '
+    apiKey: 'AIzaSyAuFhT2nSsmHVfxouYWGmy2MaYFR-Myd6g',
+    authDomain: 'portfolio-annyiqbal.firebaseapp.com',
+    databaseURL: 'https://portfolio-annyiqbal.firebaseio.com',
+    storageBucket: 'portfolio-annyiqbal.appspot.com',
+    messagingSenderId: '630847860950'
   };
 
 // Routing Object
