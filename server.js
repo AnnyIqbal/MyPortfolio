@@ -21,13 +21,18 @@ var express = require('express');
 
 var app = express();
 
-app.use(express.static('./app'));
+app.use(express.static('/dist/app'));
 
 app.get('/', function(req, res) {
-    res.sendFile(__dirname + '/src/index.html');
+    res.sendFile(__dirname + '/dist/index.html');
 });
 app.get('/about', function(req, res) {
     res.send('this is about page');
 });
+app.get('*', function(req, res){
+    res.send('error! gahalat agae');
+})
 
-app.listen(3000); // Loading ...
+app.listen(3000, function(){
+    console.log('listening on port 3000');
+}); // Loading ...
