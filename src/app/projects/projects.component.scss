@@ -34,3 +34,20 @@
     font-weight: bolder;
     font-size: 16px;
 }
+@media screen and (max-width: 768px){    /* for small screens<768px, jb screen ziada se ziada 767px ki ho tb */
+.screenSize {
+    @include setWidth(calc(100vw - 45px));
+}
+.flexBox {
+    padding: 3px;
+}
+.flexItem {
+    margin: 0 3px;
+}
+.widthGrid {
+    @include setWidth(29vw);
+}
+.widthDetail {
+    @include setWidth(55vw);
+}
+}

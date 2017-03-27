@@ -29,7 +29,7 @@
                       <h3>{{item.subtitle}}</h3>
                     </md-card-subtitle>
                   </md-card-header>
-                  <br><br>
+                  <br><br><br>
                   <md-card-content> 
                     <p> <strong>{{item.cgpa}}</strong></p>
                     <p> {{item.batch}} </p>
@@ -45,7 +45,7 @@
   </md-tab>
   <md-tab label="Technical Expertise">
   <md-card>
-    <md-grid-list cols="4" rowHeight="150px">
+    <md-grid-list class="gridSize" cols="4" rowHeight="150px">
       <md-grid-tile *ngFor="let tile of tiles"
           [colspan]="1"
           [rowspan]="2"
@@ -58,7 +58,7 @@
           [colspan]="2"
           [rowspan]="2"
           [style.background]="tech.color">
-        <img src={{tech.text}} alt="logos" />
+        <img class="smallSize" src={{tech.text}} alt="logos" />
       </md-grid-tile>
     </md-grid-list>
   </md-card>

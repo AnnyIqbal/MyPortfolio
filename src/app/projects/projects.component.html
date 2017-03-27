@@ -5,7 +5,7 @@
       </md-card-title>
       <md-card-content>
         <md-grid-list cols="3" rowHeight="100px">
-          <md-grid-tile class="textStyle" (click) = "showDetails(project)"
+          <md-grid-tile class="textStyle" (click)="showDetails(project)"
               *ngFor="let project of projects"
               [colspan]="1"
               [rowspan]="1"

@@ -1,7 +1,4 @@
 .bgImage {
-  /*background-image: url(../../assets/Images/about.jpg);*/
-  /*background-image: url(../../assets/Images/images.jpg);*/
-  /*background-size: cover;*/
   height: 88vh;
   width: 97.5vw;
   color: black;
@@ -52,4 +49,27 @@
 }
 blockDisplay {
     display: block !important;
+}
+@media screen and (max-width: 768px){    /* for small screens<768px, jb screen ziada se ziada 767px ki ho tb */
+.screenSize {
+    width: 98vw;
+}
+.wide {
+    width: 35vw;
+}
+.size {
+    height: 70px;
+    width: 60px;
+    margin: 25px auto;
+}
+.font {
+    font-size: 14px;
+}
+/*.gridSize {
+    /*height: 30vh;*/
+}
+.smallSize {
+    height: 50px;
+    width: 50px;
+}*/
 }
