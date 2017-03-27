@@ -23,3 +23,24 @@ a {
     height: 23em;
     margin: 2vh auto;
 }
+@media screen and (max-width: 768px){    /* for small screens<768px, jb screen ziada se ziada 767px ki ho tb */
+  .screenSize {
+    background-repeat: no-repeat;
+    width: 93vw;
+    height: 100vh;
+  }
+  .card {
+    margin: 0 auto;
+    height: 65vh;
+    width: 65%;
+  }
+ .formCenter {
+    width: 100%;
+ }
+ h1 {
+    font-size: 20px;
+ }
+ .rightAlign a img{
+    width: 35px;
+ }
+}

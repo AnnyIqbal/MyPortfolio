@@ -11,3 +11,15 @@
     height: 80vh;
     width: 95vw;
 }
+@media screen and (max-width: 768px){    /* for small screens<768px, jb screen ziada se ziada 767px ki ho tb */
+  .bgImage {
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  .screenSize {
+    width: 85vw;
+  }
+  .text {
+      font-size: small;
+  }
+}

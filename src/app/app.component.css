@@ -1,0 +1,15 @@
+@media screen and (max-width: 768px){    /* for small screens<768px, jb screen ziada se ziada 767px ki ho tb */
+    body{
+        height: 100%;
+        width: 100%;
+    }
+    .nav {
+        height: 20vh;
+        width: 100%;
+    }
+    .main {
+        background: bluevoilet; 
+        height: 80vh;
+        width: 100%;
+    }
+}
