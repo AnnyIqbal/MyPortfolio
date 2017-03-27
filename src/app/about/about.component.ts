@@ -1,12 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
+  // alert(window.innerWidth);
+
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
+
+  rowHeight: string;
+
   tiles = [
       {text: '../../assets/Images/ionic.jpg', color: 'lightblue'},
       {text: '../../assets/Images/angular.png', color: 'lightgreen'},
@@ -34,6 +39,9 @@ export class AboutComponent implements OnInit {
   constructor(private route: Router) {}
 
   ngOnInit() {
+    this.rowHeight = window.innerWidth < 768 ? '75px' : '150px'; // window.innerWidth = browser's inner width
+  }
+  ngOnChange() {
   }
 
 }

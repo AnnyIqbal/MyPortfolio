@@ -65,11 +65,11 @@ blockDisplay {
 .font {
     font-size: 14px;
 }
-/*.gridSize {
-    /*height: 30vh;*/
+.gridSize {
+    height: 150px !important;
 }
-.smallSize {
-    height: 50px;
-    width: 50px;
-}*/
+.widesize {
+    height: 70px;
+    width: 150px;
+}
 }
